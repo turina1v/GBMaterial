@@ -12,4 +12,9 @@
     <string name="menu_slideshow">Slideshow</string>
 
     <string name="home_second">Home Second</string>
+    <string name="hint_username">Username*</string>
+    <string name="hint_email">E-mail*</string>
+    <string name="button_sign_in">Sign in</string>
+    <string name="error_invalid_email">E-mail not valid</string>
+    <string name="text_required_fields">*Required</string>
 </resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">GBMaterial</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="menu_home">Главная</string>
+    <string name="menu_gallery">Галерея</string>
+    <string name="menu_slideshow">Слайд-шоу</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="hint_username">Имя пользователя*</string>
+    <string name="hint_email">E-mail*</string>
+    <string name="button_sign_in">Войти</string>
+    <string name="error_invalid_email">Некорректный e-mail</string>
+    <string name="text_required_fields">*Поля, обязательные для заполнения</string>
+</resources>
