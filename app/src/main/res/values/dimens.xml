@@ -6,5 +6,5 @@
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="margin_side_login">20dp</dimen>
-    <dimen name="text_size_activity_userinput">16sp</dimen>
+    <dimen name="text_size_plain">16sp</dimen>
 </resources>

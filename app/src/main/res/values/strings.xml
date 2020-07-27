@@ -18,4 +18,7 @@
     <string name="error_invalid_email">E-mail not valid</string>
     <string name="text_required_fields">*Required</string>
     <string name="snackbar_empty_fields">Please, fill in required fields</string>
+    <string name="bottom_sheet_add_task">Add task</string>
+    <string name="bottom_sheet_edit_tasks">Edit tasks</string>
+    <string name="bottom_sheet_clear_all">Clear all</string>
 </resources>

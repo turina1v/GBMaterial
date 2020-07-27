@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorDivider"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_side_login"
+        android:layout_marginLeft="@dimen/margin_side_login"
+        android:drawableStart="@drawable/ic_add"
+        android:drawableLeft="@drawable/ic_add"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/bottom_sheet_add_task"
+        android:textSize="@dimen/text_size_plain" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_side_login"
+        android:layout_marginLeft="@dimen/margin_side_login"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawableLeft="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/bottom_sheet_edit_tasks" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/margin_side_login"
+        android:layout_marginLeft="@dimen/margin_side_login"
+        android:drawableStart="@drawable/ic_delete"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:text="@string/bottom_sheet_clear_all" />
+</LinearLayout>
