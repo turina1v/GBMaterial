@@ -17,4 +17,5 @@
     <string name="button_sign_in">Войти</string>
     <string name="error_invalid_email">Некорректный e-mail</string>
     <string name="text_required_fields">*Поля, обязательные для заполнения</string>
+    <string name="snackbar_empty_fields">Пожалуйста, заполните обязательные поля</string>
 </resources>

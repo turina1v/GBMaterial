@@ -17,4 +17,5 @@
     <string name="button_sign_in">Sign in</string>
     <string name="error_invalid_email">E-mail not valid</string>
     <string name="text_required_fields">*Required</string>
+    <string name="snackbar_empty_fields">Please, fill in required fields</string>
 </resources>

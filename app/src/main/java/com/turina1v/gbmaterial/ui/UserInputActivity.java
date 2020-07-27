@@ -1,17 +1,23 @@
 package com.turina1v.gbmaterial.ui;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputLayout;
 import com.turina1v.gbmaterial.R;
+
+import java.util.Objects;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,7 +57,7 @@ public class UserInputActivity extends AppCompatActivity {
                 emailTextInputLayout.setError(getString(R.string.error_invalid_email));
                 emailTextInputLayout.setErrorEnabled(true);
             } else if (usernameInput.length() == 0 || emailInput.length() == 0) {
-                // SnackBar
+                showSnackbar(confirmButton);
             }
         });
 
@@ -78,5 +84,12 @@ public class UserInputActivity extends AppCompatActivity {
     private boolean isEmailValid(String email) {
         String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.[a-z]+";
         return (email != null && email.matches(emailPattern));
+    }
+
+    private void showSnackbar(View view){
+        InputMethodManager imm = (InputMethodManager) getSystemService(Activity.INPUT_METHOD_SERVICE);
+        Objects.requireNonNull(imm).hideSoftInputFromWindow(view.getWindowToken(), 0);
+        Snackbar snackbar = Snackbar.make(view, R.string.snackbar_empty_fields, Snackbar.LENGTH_LONG);
+        snackbar.show();
     }
 }
